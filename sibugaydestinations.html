@@ -1,0 +1,531 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tourist Destinations | Zamboanga Sibugay Tourism</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <link href="styles/style.css" rel="stylesheet">
+</head>
+<body>
+
+    <!-- 1. Header with Coat of Arms -->
+    <header class="header-brand py-4">
+        <div class="container">
+            <div class="row align-items-center justify-content-center text-center">
+                <div class="col-auto">
+                    <img src="images/coatofarms.png" alt="Coat of Arms" class="mb-0 img-fluid" style="max-width: 160px;">
+                </div>
+                <div class="col-12 col-md-8">
+                    <h1 class="display-4 fw-bold mb-1">
+                        <span class="text-custom-green">Zamboanga</span>
+                        <span class="text-light">Sibugay</span>
+                        <span class="text-custom-red">Tourism</span>
+                    </h1>
+                    <p class="lead text-white fw-semibold mb-0">Discover the Natural Gems of the Peninsula</p>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- 2. Shared Navigation (index_2.html requirement) -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top shadow">
+        <div class="container">
+            <a class="navbar-brand fw-bold" href="index.html">HOME</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link" href="sibugayabout.html">About the Province</a></li>
+                    <li class="nav-item"><a class="nav-link active" href="sibugaydestinations.html">Destinations</a></li>
+                    <li class="nav-item"><a class="nav-link" href="sibugayculture.html">Culture & Festivals</a></li>
+                    <li class="nav-item"><a class="nav-link" href="sibugayfood.html">Local Food</a></li>
+                    <li class="nav-item"><a class="nav-link" href="sibugaygallery.html">Gallery</a></li>
+                    <li class="nav-item"><a class="nav-link" href="sibugaytips.html">Travel Tips</a></li>
+                    <li class="nav-item"><a class="nav-link" href="sibugayinquiry.html">Inquiry Form</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <main>
+        <!-- Hero Section -->
+        <section class="hero-section text-center">
+            <div class="container">
+                <h2 class="display-3 fw-bold">Tourist Destinations</h2>
+                <p class="fs-4 mb-0">Explore the breathtaking spots across Zamboanga Sibugay</p>
+            </div>
+        </section>
+
+        <!-- Dynamic Destination Search -->
+        <section id="explore" class="container my-5 py-5">
+            <div class="text-center mb-5">
+                <h2 class="text-custom-green fw-bold">Find Your Next Adventure</h2>
+                <div class="row justify-content-center mt-4 g-3">
+                    <div class="col-md-5">
+                        <input type="text" id="searchInput" class="form-control form-control-lg border-success" placeholder="Search by destination name...">
+                    </div>
+                    <div class="col-md-3">
+                        <select id="categoryFilter" class="form-select form-select-lg border-success">
+                            <option value="All">All</option>
+                            <option value="Beach">Beach</option>
+                            <option value="Mountain">Mountain</option>
+                            <option value="Waterfall">Waterfall</option>
+                            <option value="Historical Site">Historical Site</option>
+                            <option value="Island">Island</option>
+                            <option value="Adventure">Adventure</option>
+                            <option value="Cultural">Cultural</option>
+                            <option value="Restaurant">Restaurant</option>
+                        </select>
+                    </div>
+                </div>
+            </div>
+            
+            <div id="dest-grid" class="row justify-content-center g-4">
+                <!-- Cards Injected by JavaScript -->
+            </div>
+        </section>
+
+        <!-- Modals -->
+            <div class="container">
+                <div class="row g-4">
+                </div>
+            </div>
+        </section>
+
+    <!-- 3. Shared Footer -->
+    <footer class="main-footer bg-dark text-white pt-5">
+    <div class="container footer-container">
+        <!-- row handles the alignment naturally: centered on small screens, left on medium+ -->
+        <div class="row gx-lg-5 gy-4 text-center justify-content-center">
+
+            <!-- Branding Section -->
+            <div class="col-sm-6 col-md-3 footer-col d-flex flex-column align-items-center text-center">
+                <img src="images/coatofarms.png" alt="Zamboanga Sibugay Tourism" style="width:120px; filter: brightness(0) invert(1);" class="img-fluid mb-3">
+                <p class="fw-bold mb-1">Zamboanga Sibugay Tourism Office</p>
+                <p class="small text-secondary mb-0">Preserving heritage, promoting sustainable travel.</p>
+            </div>
+
+            <!-- Highlights Section -->
+            <div class="col-sm-6 col-md-3 footer-col d-flex flex-column align-items-center">
+                <h3 class="h5 fw-bold mb-3">Highlights</h3>
+                <ul class="list-unstyled">
+                    <li class="mb-2"><i class="fas fa-map-marker-alt me-2 text-success"></i>Famous attractions</li>
+                    <li class="mb-2"><i class="fas fa-calendar-alt me-2 text-warning"></i>Festivals & events</li>
+                    <li class="mb-2"><i class="fas fa-lightbulb me-2 text-info"></i>Visitor tips</li>
+                </ul>
+            </div>
+
+            <!-- Connect Section -->
+            <div class="col-sm-6 col-md-3 footer-col d-flex flex-column align-items-center text-center">
+                <h3 class="h5 fw-bold mb-3">Connect</h3>
+                <p class="mb-2"><i class="fas fa-envelope me-2 text-success"></i>tourism@sibugay.gov.ph</p>
+                <div class="socials d-flex gap-3 fs-3 mt-2 justify-content-center">
+                    <span class="text-white" style="pointer-events:none; cursor: default;"><i class="fab fa-tiktok"></i></span>
+                    <span class="text-white" style="pointer-events:none; cursor: default;"><i class="fab fa-facebook"></i></span>
+                    <span class="text-white" style="pointer-events:none; cursor: default;"><i class="fab fa-instagram"></i></span>
+                    <span class="text-white" style="pointer-events:none; cursor: default;"><i class="fab fa-x-twitter"></i></span>
+                </div>
+            </div>
+
+            <!-- Emergencies Section -->
+            <div class="col-sm-6 col-md-3 footer-col d-flex flex-column align-items-center">
+                <h3 class="h5 fw-bold mb-3">Emergencies</h3>
+                <p class="phone fs-1 fw-bold text-danger mb-0">911</p>
+                <p class="text-secondary">Assistance Hotline</p>
+            </div>
+
+        </div>
+    </div>
+
+    <!-- Bottom Copyright Bar -->
+    <div class="bg-warning text-center py-3 mt-5">
+        <div class="container">
+            <p class="mb-0 fw-bold text-white" style="font-size: 18px;">
+                &copy; 2026 Zamboanga Sibugay Tourism | All Rights Reserved
+            </p>
+        </div>
+    </div>
+</footer>
+
+<!-- Buluan Island Modal -->
+<div class="modal fade" id="buluanModal" tabindex="-1">
+    <div class="modal-dialog modal-lg modal-dialog-centered">
+        <div class="modal-content">
+
+            <!-- Modal Header -->
+            <div class="modal-header bg-success text-white">
+                <h5 class="modal-title">Buluan Island Details</h5>
+                <button type="button"
+                        class="btn-close btn-close-white"
+                        data-bs-dismiss="modal">
+                </button>
+            </div>
+
+            <!-- Modal Body -->
+            <div class="modal-body">
+
+                <img src="images/buluansanctuary.png"
+                     class="img-fluid rounded mb-3"
+                     alt="Buluan Island">
+
+                <h6><strong>Full Description</strong></h6>
+                <p>
+                    Buluan Island is a picturesque white-sand island
+                    located off the coast of Ipil. It features
+                    crystal-clear waters, coral reefs, and peaceful
+                    surroundings perfect for marine adventures and
+                    relaxation.
+                </p>
+
+                <h6><strong>Location</strong></h6>
+                <p>Ipil, Zamboanga Sibugay</p>
+
+                <h6><strong>Activities</strong></h6>
+                <ul>
+                    <li>Swimming</li>
+                    <li>Snorkeling</li>
+                    <li>Kayaking</li>
+                    <li>Beach activities</li>
+                    <li>Marine life observation</li>
+                </ul>
+
+                <h6><strong>Best Time to Visit</strong></h6>
+                <p>November to May (dry season)</p>
+
+                <h6><strong>Entrance Fee</strong></h6>
+                <p>Free</p>
+
+                <h6><strong>Opening Hours</strong></h6>
+                <p>24/7</p>
+
+                <h6><strong>Travel Tips</strong></h6>
+                <ul>
+                    <li>Bring sunscreen and drinking water.</li>
+                    <li>Use snorkeling gear for reef exploration.</li>
+                    <li>Travel early for calmer waters.</li>
+                    <li>Keep the island clean and avoid damaging corals.</li>
+                </ul>
+
+            </div>
+
+            <!-- Modal Footer -->
+            <div class="modal-footer">
+                <button class="btn btn-secondary"
+                        data-bs-dismiss="modal">
+                    Close
+                </button>
+            </div>
+
+        </div>
+    </div>
+</div>
+
+<!-- Linguisan Beach Modal -->
+<div class="modal fade" id="linguisanModal" tabindex="-1">
+    <div class="modal-dialog modal-lg modal-dialog-centered">
+        <div class="modal-content">
+
+            <div class="modal-header bg-success text-white">
+                <h5 class="modal-title">Linguisan Beach Details</h5>
+                <button type="button" class="btn-close btn-close-white"
+                        data-bs-dismiss="modal"></button>
+            </div>
+
+            <div class="modal-body">
+
+                <img src="images/linguisan.png"
+                     class="img-fluid rounded mb-3"
+                     alt="Linguisan Beach">
+
+                <h6><strong>Full Description</strong></h6>
+                <p>
+                    Linguisan Beach is a peaceful coastal destination
+                    famous for its fine sand, gentle waves, and scenic
+                    shoreline ideal for relaxation and family outings.
+                </p>
+
+                <h6><strong>Location</strong></h6>
+                <p>Guicam, Zamboanga Sibugay</p>
+
+                <h6><strong>Activities</strong></h6>
+                <ul>
+                    <li>Swimming</li>
+                    <li>Picnics</li>
+                    <li>Sunset viewing</li>
+                    <li>Beach relaxation</li>
+                </ul>
+
+                <h6><strong>Best Time to Visit</strong></h6>
+                <p>November–May</p>
+
+                <h6><strong>Entrance Fee</strong></h6>
+                <p>₱30</p>
+
+                <h6><strong>Opening Hours</strong></h6>
+                <p>24/7</p>
+
+                <h6><strong>Travel Tips</strong></h6>
+                <ul>
+                    <li>Bring extra clothes and sunscreen.</li>
+                    <li>Visit late afternoon for sunsets.</li>
+                    <li>Dispose of waste properly.</li>
+                </ul>
+
+            </div>
+
+            <div class="modal-footer">
+                <button class="btn btn-secondary"
+                        data-bs-dismiss="modal">Close</button>
+            </div>
+
+        </div>
+    </div>
+</div>
+
+<!-- Mount Gampoy Modal -->
+<div class="modal fade" id="gampoyModal" tabindex="-1">
+    <div class="modal-dialog modal-lg modal-dialog-centered">
+        <div class="modal-content">
+
+            <div class="modal-header bg-success text-white">
+                <h5 class="modal-title">Mount Gampoy Details</h5>
+                <button type="button"
+                        class="btn-close btn-close-white"
+                        data-bs-dismiss="modal"></button>
+            </div>
+
+            <div class="modal-body">
+
+                <img src="images/gampoy.png"
+                     class="img-fluid rounded mb-3">
+
+                <h6><strong>Full Description</strong></h6>
+                <p>
+                    Mount Gampoy is a highland destination known for
+                    cool weather, dense vegetation, and panoramic views.
+                </p>
+
+                <h6><strong>Location</strong></h6>
+                <p>Malangas, Zamboanga Sibugay</p>
+
+                <h6><strong>Activities</strong></h6>
+                <ul>
+                    <li>Mountain hiking</li>
+                    <li>Photography</li>
+                    <li>Nature exploration</li>
+                    <li>Camping</li>
+                </ul>
+
+                <h6><strong>Best Time to Visit</strong></h6>
+                <p>Dry season mornings</p>
+
+                <h6><strong>Entrance Fee</strong></h6>
+                <p>₱50</p>
+
+                <h6><strong>Opening Hours</strong></h6>
+                <p>5:00 AM – 5:00 PM</p>
+
+                <h6><strong>Travel Tips</strong></h6>
+                <ul>
+                    <li>Wear hiking shoes.</li>
+                    <li>Bring water and snacks.</li>
+                    <li>Travel with a guide.</li>
+                </ul>
+
+            </div>
+
+            <div class="modal-footer">
+                <button class="btn btn-secondary"
+                        data-bs-dismiss="modal">Close</button>
+            </div>
+
+        </div>
+    </div>
+</div>
+
+<!-- Talisay Heights Modal -->
+<div class="modal fade" id="talisayModal" tabindex="-1">
+    <div class="modal-dialog modal-lg modal-dialog-centered">
+        <div class="modal-content">
+
+            <div class="modal-header bg-success text-white">
+                <h5 class="modal-title">Talisay Heights Details</h5>
+                <button type="button"
+                        class="btn-close btn-close-white"
+                        data-bs-dismiss="modal"></button>
+            </div>
+
+            <div class="modal-body">
+
+                <img src="images/talisay heights.png"
+                     class="img-fluid rounded mb-3">
+
+                <h6><strong>Full Description</strong></h6>
+                <p>
+                    Talisay Heights is a restaurant and function hall
+                    serving Filipino cuisine and hosting events.
+                </p>
+
+                <h6><strong>Location</strong></h6>
+                <p>Ipil, Zamboanga Sibugay</p>
+
+                <h6><strong>Activities</strong></h6>
+                <ul>
+                    <li>Dining</li>
+                    <li>Family gatherings</li>
+                    <li>Events and celebrations</li>
+                </ul>
+
+                <h6><strong>Best Time to Visit</strong></h6>
+                <p>Lunch and dinner hours</p>
+
+                <h6><strong>Entrance Fee</strong></h6>
+                <p>No entrance fee</p>
+
+                <h6><strong>Opening Hours</strong></h6>
+                <p>Opens 10:00 AM</p>
+
+                <h6><strong>Travel Tips</strong></h6>
+                <ul>
+                    <li>Reserve for large groups.</li>
+                    <li>Bring cash.</li>
+                </ul>
+
+            </div>
+
+            <div class="modal-footer">
+                <button class="btn btn-secondary"
+                        data-bs-dismiss="modal">Close</button>
+            </div>
+
+        </div>
+    </div>
+</div>
+
+<!-- Malagandis Falls Modal -->
+<div class="modal fade" id="malagandisModal" tabindex="-1">
+    <div class="modal-dialog modal-lg modal-dialog-centered">
+        <div class="modal-content">
+
+            <div class="modal-header bg-success text-white">
+                <h5 class="modal-title">Malagandis Falls Details</h5>
+                <button type="button"
+                        class="btn-close btn-close-white"
+                        data-bs-dismiss="modal"></button>
+            </div>
+
+            <div class="modal-body">
+
+                <img src="images/malagandis.png"
+                     class="img-fluid rounded mb-3">
+
+                <h6><strong>Full Description</strong></h6>
+                <p>
+                    A scenic waterfall surrounded by greenery and cool
+                    natural pools suitable for relaxation.
+                </p>
+
+                <h6><strong>Location</strong></h6>
+                <p>Titay, Zamboanga Sibugay</p>
+
+                <h6><strong>Activities</strong></h6>
+                <ul>
+                    <li>Swimming</li>
+                    <li>Nature photography</li>
+                    <li>Relaxation</li>
+                </ul>
+
+                <h6><strong>Best Time to Visit</strong></h6>
+                <p>Morning during dry season</p>
+
+                <h6><strong>Entrance Fee</strong></h6>
+                <p>Free</p>
+
+                <h6><strong>Opening Hours</strong></h6>
+                <p>8:00 AM – 5:00 PM</p>
+
+                <h6><strong>Travel Tips</strong></h6>
+                <ul>
+                    <li>Wear sandals with grip.</li>
+                    <li>Bring waterproof bags.</li>
+                </ul>
+
+            </div>
+
+            <div class="modal-footer">
+                <button class="btn btn-secondary"
+                        data-bs-dismiss="modal">Close</button>
+            </div>
+
+        </div>
+    </div>
+</div>
+
+<!-- Ipil Rotunda Obelisk Modal -->
+<div class="modal fade" id="obeliskModal" tabindex="-1">
+    <div class="modal-dialog modal-lg modal-dialog-centered">
+        <div class="modal-content">
+
+            <div class="modal-header bg-success text-white">
+                <h5 class="modal-title">Ipil Rotunda Obelisk Details</h5>
+                <button type="button"
+                        class="btn-close btn-close-white"
+                        data-bs-dismiss="modal"></button>
+            </div>
+
+            <div class="modal-body">
+
+                <img src="images/obelisk.png"
+                     class="img-fluid rounded mb-3">
+
+                <h6><strong>Full Description</strong></h6>
+                <p>
+                    The Ipil Rotunda Obelisk is a symbolic landmark
+                    representing the identity and progress of Ipil.
+                </p>
+
+                <h6><strong>Location</strong></h6>
+                <p>Ipil, Zamboanga Sibugay</p>
+
+                <h6><strong>Activities</strong></h6>
+                <ul>
+                    <li>Sightseeing</li>
+                    <li>Photography</li>
+                    <li>Historical appreciation</li>
+                </ul>
+
+                <h6><strong>Best Time to Visit</strong></h6>
+                <p>Morning or evening</p>
+
+                <h6><strong>Entrance Fee</strong></h6>
+                <p>Free</p>
+
+                <h6><strong>Opening Hours</strong></h6>
+                <p>24/7</p>
+
+                <h6><strong>Travel Tips</strong></h6>
+                <ul>
+                    <li>Be cautious of traffic.</li>
+                    <li>Visit during cooler hours.</li>
+                    <li>Great spot for landmark photos.</li>
+                </ul>
+
+            </div>
+
+            <div class="modal-footer">
+                <button class="btn btn-secondary"
+                        data-bs-dismiss="modal">Close</button>
+            </div>
+
+        </div>
+    </div>
+</div>
+
+    
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="script/script.js"></script>
+</body>
+</html>

@@ -1,0 +1,379 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Photo Gallery | Zamboanga Sibugay Tourism</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="styles/style.css">
+</head>
+<body>
+
+    <!-- 1. Header with Coat of Arms -->
+<header class="header-brand py-4">
+    <div class="container">
+        <div class="row align-items-center justify-content-center text-center">
+            <div class="col-auto">
+                <img src="images/coatofarms.png" alt="Coat of Arms" class="mb-0 img-fluid" style="max-width: 160px;">
+            </div>
+            <div class="col-12 col-md-8">
+                <h1 class="display-4 fw-bold mb-1">
+                    <span class="text-custom-green">Zamboanga</span>
+                    <span class="text-light">Sibugay</span>
+                    <span class="text-custom-red">Tourism</span>
+                </h1>
+                <p class="lead text-white fw-semibold mb-0">Discover the Natural Gems of the Peninsula</p>
+            </div>
+        </div>
+    </div>
+</header>
+
+ <nav class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top shadow">
+    <div class="container">
+        <a class="navbar-brand fw-bold" href="index.html">HOME</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ms-auto text-uppercase">
+                <li class="nav-item"><a class="nav-link" href="sibugayabout.html">About the Province</a></li>
+                <li class="nav-item"><a class="nav-link" href="sibugaydestinations.html">Destinations</a></li>
+                <li class="nav-item"><a class="nav-link" href="sibugayculture.html">Culture & Festivals</a></li>
+                <li class="nav-item"><a class="nav-link" href="sibugayfood.html">Local Food</a></li>
+                
+                <li class="nav-item"><a class="nav-link active" href="sibugaygallery.html">Gallery</a></li>
+                
+                <li class="nav-item"><a class="nav-link" href="sibugaytips.html">Travel Tips</a></li>
+                <li class="nav-item"><a class="nav-link" href="sibugayinquiry.html">Inquiry Form</a></li>
+            </ul>
+        </div>
+    </div>
+</nav>
+
+
+
+    <main>
+        <!-- Hero Section -->
+        <div id="lightbox" class="lightbox">
+    <span class="lightbox-close" id="closeLightbox">&times;</span>
+    <img id="lightbox-img" src="" alt="Preview">
+</div>
+    
+        <section class="hero-section text-center">
+            <div class="container">
+                <h2 class="display-3 fw-bold">Visual Journey</h2>
+                <p class="fs-4 mb-0">Capture the soul of Zamboanga Sibugay through our lens</p>
+            </div>
+        </section>
+
+        <!-- Gallery Section -->
+<section class="gallery-container">
+    <div class="container">
+        <div class="row g-3">
+
+            <!-- Photo 1 -->
+            <div class="col-6 col-md-4 col-lg-3">
+                <div class="gallery-item" data-img="images/buluansanctuary.png">
+                    <img src="images/buluansanctuary.png" alt="Buluan Island Sunset">
+                    <div class="gallery-overlay">Buluan Island Sunset</div>
+                </div>
+            </div>
+
+            <!-- Photo 2 -->
+            <div class="col-6 col-md-4 col-lg-3">
+                <div class="gallery-item" data-img="images/sibugsibug.png">
+                    <img src="images/sibugsibug.png" alt="Sibug-Sibug Street Dancing">
+                    <div class="gallery-overlay">Sibug-Sibug Festival</div>
+                </div>
+            </div>
+
+            <!-- Photo 3 -->
+            <div class="col-6 col-md-4 col-lg-3">
+                <div class="gallery-item" data-img="images/oysters.png">
+                    <img src="images/oysters.png" alt="Giant Oysters of Kabasalan">
+                    <div class="gallery-overlay">Fresh Sibugay Oysters</div>
+                </div>
+            </div>
+
+            <!-- Photo 4 -->
+            <div class="col-6 col-md-4 col-lg-3">
+                <div class="gallery-item" data-img="images/malagandis.png">
+                    <img src="images/malagandis.png" alt="Malagandis Falls">
+                    <div class="gallery-overlay">Malagandis Falls</div>
+                </div>
+            </div>
+
+            <!-- Photo 5 -->
+            <div class="col-6 col-md-4 col-lg-3">
+                <div class="gallery-item" data-img="images/ricefield.png">
+                    <img src="images/ricefield.png" alt="Kabasalan Rice and Industrial Hub">
+                    <div class="gallery-overlay">Kabasalan Rice and Industrial Hub</div>
+                </div>
+            </div>
+
+            <!-- Photo 6 -->
+            <div class="col-6 col-md-4 col-lg-3">
+                <div class="gallery-item" data-img="images/tagbilat.png">
+                    <img src="images/tagbilat.png" alt="Tagbilat Falls">
+                    <div class="gallery-overlay">Tagbilat Falls</div>
+                </div>
+            </div>
+
+            <!-- Photo 7 -->
+            <div class="col-6 col-md-4 col-lg-3">
+                <div class="gallery-item" data-img="images/sportscomplex.png">
+                    <img src="images/sportscomplex.png" alt="Zamboanga Sibugay Provincial Sports Complex">
+                    <div class="gallery-overlay">Zamboanga Sibugay Provincial Sports Complex</div>
+                </div>
+            </div>
+
+            <!-- Photo 8 -->
+            <div class="col-6 col-md-4 col-lg-3">
+                <div class="gallery-item" data-img="images/pandilusanisland.png">
+                    <img src="images/pandilusanisland.png" alt="Pandilusan Island">
+                    <div class="gallery-overlay">Pandilusan Island</div>
+                </div>
+            </div>
+
+            <!-- Photo 9 -->
+            <div class="col-6 col-md-4 col-lg-3">
+                <div class="gallery-item" data-img="images/palina.png">
+                    <img src="images/palina.png" alt="Mount Palina">
+                    <div class="gallery-overlay">Mount Palina</div>
+                </div>
+            </div>
+
+            <!-- Photo 10 -->
+            <div class="col-6 col-md-4 col-lg-3">
+                <div class="gallery-item" data-img="images/mangroove.png">
+                    <img src="images/mangroove.png" alt="Kabug Mangrove Park and Wetlands">
+                    <div class="gallery-overlay">Kabug Mangrove Park and Wetlands</div>
+                </div>
+            </div>
+
+            <!-- Photo 11 -->
+            <div class="col-6 col-md-4 col-lg-3">
+                <div class="gallery-item" data-img="images/lokot-lokot.png">
+                    <img src="images/lokot-lokot.png" alt="Local Delicacies">
+                    <div class="gallery-overlay">Lokot-Lokot Making</div>
+                </div>
+            </div>
+
+            <!-- Photo 12 -->
+            <div class="col-6 col-md-4 col-lg-3">
+                <div class="gallery-item" data-img="images/gampoy.png">
+                    <img src="images/gampoy.png" alt="Mt. Gampoy">
+                    <div class="gallery-overlay"> Mt. Gampoy</div>
+                </div>
+            </div>
+
+            <!-- Photo 13 -->
+            <div class="col-6 col-md-4 col-lg-3">
+                <div class="gallery-item" data-img="images/4x4.png">
+                    <img src="images/4x4.png" alt="Off-Road 4x4 Challenges">
+                    <div class="gallery-overlay">Off-Road 4x4 Challenges</div>
+                </div>
+            </div>
+
+            <!-- Photo 14 -->
+            <div class="col-6 col-md-4 col-lg-3">
+                <div class="gallery-item" data-img="images/capitol.png">
+                    <img src="images/capitol.png" alt="Provincial Capitol">
+                    <div class="gallery-overlay">Sibugay Provincial Capitol</div>
+                </div>
+            </div>
+
+            <!-- Photo 15 -->
+            <div class="col-6 col-md-4 col-lg-3">
+                <div class="gallery-item" data-img="images/rubber.png">
+                    <img src="images/rubber.png" alt="Naga Rubber Plantation">
+                    <div class="gallery-overlay">Naga Rubber Plantation</div>
+                </div>
+            </div>
+
+            <!-- Photo 16 -->
+            <div class="col-6 col-md-4 col-lg-3">
+                <div class="gallery-item" data-img="images/wetlands.png">
+                    <img src="images/wetlands.png" alt="Sibugay Wetland Nature Reserve">
+                    <div class="gallery-overlay">Sibugay Wetland Nature Reserve</div>
+                </div>
+            </div>
+
+            <!-- Photo 17 -->
+            <div class="col-6 col-md-4 col-lg-3">
+                <div class="gallery-item" data-img="images/cave.png">
+                    <img src="images/cave.png" alt="Moalboal Cave">
+                    <div class="gallery-overlay">Moalboal Cave (Titay)</div>
+                </div>
+            </div>
+
+            <!-- Photo 18 -->
+            <div class="col-6 col-md-4 col-lg-3">
+                <div class="gallery-item" data-img="images/kurma.png">
+                    <img src="images/kurma.png" alt="Kurma">
+                    <div class="gallery-overlay">Kurma</div>
+                </div>
+            </div>
+
+            <!-- Photo 19 -->
+            <div class="col-6 col-md-4 col-lg-3">
+                <div class="gallery-item" data-img="images/pasalamatfestival.png">
+                    <img src="images/pasalamatfestival.png" alt="Pasalamat Festival">
+                    <div class="gallery-overlay">Pasalamat Festival (Kabasalan)</div>
+                </div>
+            </div>
+
+            <!-- Photo 20 -->
+            <div class="col-6 col-md-4 col-lg-3">
+                <div class="gallery-item" data-img="images/bangka_race.png">
+                    <img src="images/bangka_race.png" alt="Local Boat Race">
+                    <div class="gallery-overlay">Regatta de Zamboanga</div>
+                </div>
+            </div>
+
+            <!-- Photo 21 -->
+            <div class="col-6 col-md-4 col-lg-3">
+                <div class="gallery-item" data-img="images/sibugayfestival.png">
+                    <img src="images/sibugayfestival.png" alt="Araw ng Sibugay">
+                    <div class="gallery-overlay">Araw ng Sibugay</div>
+                </div>
+            </div>
+
+            <!-- Photo 22 -->
+            <div class="col-6 col-md-4 col-lg-3">
+                <div class="gallery-item" data-img="images/linguisan.png">
+                    <img src="images/linguisan.png" alt="Linguisan Beach">
+                    <div class="gallery-overlay">Linguisan Beach</div>
+                </div>
+            </div>
+
+            <!-- Photo 23 -->
+            <div class="col-6 col-md-4 col-lg-3">
+                <div class="gallery-item" data-img="images/Zamboanga Sibugay museum .png">
+                    <img src="images/Zamboanga Sibugay museum .png" alt="zamboanga sibugay museum and science center">
+                    <div class="gallery-overlay">Zamboanga Sibugay Museum and Science Center</div>
+                </div>
+            </div>
+
+            <!-- Photo 24 -->
+            <div class="col-6 col-md-4 col-lg-3">
+                <div class="gallery-item" data-img="images/subanen.png">
+                    <img src="images/subanen.png" alt="Subanen Ancestral Domain">
+                    <div class="gallery-overlay">Ancestral Domains</div>
+                </div>
+            </div>
+
+            <!-- Photo 25 -->
+            <div class="col-6 col-md-4 col-lg-3">
+                <div class="gallery-item" data-img="images/motocross.png">
+                    <img src="images/motocross.png" alt="Sibugay Motocross Circuit">
+                    <div class="gallery-overlay"> Sibugay Motocross Circuit </div>
+                </div>
+            </div>
+
+            <!-- Photo 26 -->
+            <div class="col-6 col-md-4 col-lg-3">
+                <div class="gallery-item" data-img="images/talisay Heights.png">
+                    <img src="images/talisay heights.png" alt="Talisay Heights">
+                    <div class="gallery-overlay">Talisay Heights</div>
+                </div>
+            </div>
+
+            <!-- Photo 27 -->
+            <div class="col-6 col-md-4 col-lg-3">
+                <div class="gallery-item" data-img="images/st.joseph.png">
+                    <img src="images/st.joseph.png" alt="St. Joseph the Worker Cathedral">
+                    <div class="gallery-overlay">St. Joseph the Worker Cathedral (Ipil)</div>
+                </div>
+            </div>
+
+            <!-- Photo 28 -->
+            <div class="col-6 col-md-4 col-lg-3">
+                <div class="gallery-item" data-img="images/calula.png">
+                    <img src="images/calula.png" alt="Mt. Calula">
+                    <div class="gallery-overlay">Mt. Calula</div>
+                </div>
+            </div>
+
+            <!-- Photo 29 -->
+            <div class="col-6 col-md-4 col-lg-3">
+                <div class="gallery-item" data-img="images/orchid.png">
+                    <img src="images/orchid.png" alt="Garden Orchid Hotel">
+                    <div class="gallery-overlay">Garden Orchid Hotel</div>
+                </div>
+            </div>
+
+            <!-- Photo 30 -->
+            <div class="col-6 col-md-4 col-lg-3">
+                <div class="gallery-item" data-img="images/ever.png">
+                    <img src="images/ever.png" alt="Ever O Business Hotel">
+                    <div class="gallery-overlay">Ever O Business Hotel</div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</section>
+    </main>
+
+      <!-- 3. Shared Footer -->
+    <footer class="main-footer bg-dark text-white pt-5">
+    <div class="container footer-container">
+        <!-- row handles the alignment naturally: centered on small screens, left on medium+ -->
+        <div class="row gx-lg-5 gy-4 text-center justify-content-center">
+
+            <!-- Branding Section -->
+            <div class="col-sm-6 col-md-3 footer-col d-flex flex-column align-items-center text-center">
+                <img src="images/coatofarms.png" alt="Zamboanga Sibugay Tourism" style="width:120px; filter: brightness(0) invert(1);" class="img-fluid mb-3">
+                <p class="fw-bold mb-1">Zamboanga Sibugay Tourism Office</p>
+                <p class="small text-secondary mb-0">Preserving heritage, promoting sustainable travel.</p>
+            </div>
+
+            <!-- Highlights Section -->
+            <div class="col-sm-6 col-md-3 footer-col d-flex flex-column align-items-center">
+                <h3 class="h5 fw-bold mb-3">Highlights</h3>
+                <ul class="list-unstyled">
+                    <li class="mb-2"><i class="fas fa-map-marker-alt me-2 text-success"></i>Famous attractions</li>
+                    <li class="mb-2"><i class="fas fa-calendar-alt me-2 text-warning"></i>Festivals & events</li>
+                    <li class="mb-2"><i class="fas fa-lightbulb me-2 text-info"></i>Visitor tips</li>
+                </ul>
+            </div>
+
+            <!-- Connect Section -->
+            <div class="col-sm-6 col-md-3 footer-col d-flex flex-column align-items-center text-center">
+                <h3 class="h5 fw-bold mb-3">Connect</h3>
+                <p class="mb-2"><i class="fas fa-envelope me-2 text-success"></i>tourism@sibugay.gov.ph</p>
+                <div class="socials d-flex gap-3 fs-3 mt-2 justify-content-center">
+                    <span class="text-white" style="pointer-events:none; cursor: default;"><i class="fab fa-tiktok"></i></span>
+                    <span class="text-white" style="pointer-events:none; cursor: default;"><i class="fab fa-facebook"></i></span>
+                    <span class="text-white" style="pointer-events:none; cursor: default;"><i class="fab fa-instagram"></i></span>
+                    <span class="text-white" style="pointer-events:none; cursor: default;"><i class="fab fa-x-twitter"></i></span>
+                </div>
+            </div>
+
+            <!-- Emergencies Section -->
+            <div class="col-sm-6 col-md-3 footer-col d-flex flex-column align-items-center">
+                <h3 class="h5 fw-bold mb-3">Emergencies</h3>
+                <p class="phone fs-1 fw-bold text-danger mb-0">911</p>
+                <p class="text-secondary">Assistance Hotline</p>
+            </div>
+
+        </div>
+    </div>
+
+    <!-- Bottom Copyright Bar -->
+    <div class="bg-warning text-center py-3 mt-5">
+        <div class="container">
+            <p class="mb-0 fw-bold text-white" style="font-size: 18px;">
+                &copy; 2026 Zamboanga Sibugay Tourism | All Rights Reserved
+            </p>
+        </div>
+    </div>
+</footer>
+
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+<script src="script/script.js"></script>
+</body>
+</html>
