@@ -1,0 +1,234 @@
+body {
+    /* Remove text-align: center to let Bootstrap handle alignment */
+    font-family: system-ui, -apple-system, sans-serif; 
+    background-color: #f4f4f4;
+}
+
+/* ================= HEADER ================= */
+
+header .logo {
+    position: absolute;
+    left: 1rem;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 120px;
+    height: auto;
+}
+
+header .title {
+    margin: 0;
+    font-size: 2rem;
+    font-weight: 700;
+    color: #000;
+}
+
+/* ================= COLORS ================= */
+.blue  { color: #0038a8; }
+.red   { color: #ce1126; }
+.gold  { color: #fcd116; }
+.green { color: #006847; }
+
+/* ================= CONTENT ================= */
+.content {
+    text-align: justify;
+    max-width: 1100px;
+    margin: auto;
+}
+
+/* ================= HEADER BRAND ================= */
+/* Custom styles to match your specific palette */
+.header-brand { background-color: #ffc107 !important; }
+.footer-bottom { background-color: #ffc107 !important; color: white !important; }
+
+.text-custom-green { color: #198754 !important; }
+.text-custom-red { color: #dc3545 !important; }
+
+.phone {
+    font-size: 2.5rem;
+    font-weight: 700;
+}
+
+.socials i {
+    font-size: 1.5rem;
+}
+
+.socials {
+    display: flex;
+    justify-content: center;
+    gap: 15px; /* Adjust this to change space between icons */
+}
+
+/* ================= MOBILE FIX ================= */
+@media (max-width: 767px) {
+    header .logo {
+        position: static;
+        display: block;
+        margin: 0 auto 10px auto;
+        transform: none;
+    }
+
+    header .title {
+        text-align: center;
+        margin: 0;
+    }
+}
+
+/* ================= GALLERY ================= */
+.gallery-container {
+    padding: 40px 0;
+}
+
+.gallery-item {
+    position: relative;
+    overflow: hidden;
+    border-radius: 10px;
+    height: 250px;
+    cursor: pointer;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+    transition: transform 0.3s ease;
+}
+
+.gallery-item:hover {
+    transform: scale(1.03);
+}
+
+.gallery-item img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: 0.4s ease;
+}
+
+.gallery-item:hover img {
+    transform: scale(1.1);
+}
+
+/* overlay */
+.gallery-overlay {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    padding: 15px;
+    color: white;
+    background: linear-gradient(transparent, rgba(0,0,0,0.7));
+    opacity: 0;
+    transition: 0.3s ease;
+}
+
+.gallery-item:hover .gallery-overlay {
+    opacity: 1;
+}
+
+/* ================= LIGHTBOX (FIXED WORKING VERSION) ================= */
+.lightbox {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0,0,0,0.95);
+    justify-content: center;
+    align-items: center;
+    z-index: 9999;
+}
+
+.lightbox.active {
+    display: flex;
+}
+
+.lightbox img {
+    max-width: 85%;
+    max-height: 80%;
+    border-radius: 10px;
+}
+
+.lightbox-close {
+    position: absolute;
+    top: 20px;
+    right: 30px;
+    font-size: 40px;
+    color: white;
+    cursor: pointer;
+}
+
+.lightbox-close:hover {
+    color: #ffc107;
+}
+
+/* ================= HERO SECTION ================= */
+.hero-section {
+    background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url('images/sibugay-bg.png') center/cover;
+    padding: 100px 0;
+    color: white;
+}
+
+/* ================= GALLERY & IMAGES ================= */
+.gallery-img { 
+    height: 200px; 
+    object-fit: cover; 
+    cursor: pointer; 
+    transition: 0.3s; 
+    border-radius: 12px; 
+}
+
+.gallery-img:hover { 
+    transform: scale(1.05); 
+    box-shadow: 0 10px 20px rgba(0,0,0,0.2); 
+}
+
+.card-img-top { 
+    height: 220px; 
+    object-fit: cover; 
+}
+
+/* ================= NAVBAR ================= */
+.navbar-dark .navbar-nav .nav-link { 
+    text-transform: uppercase; 
+    font-weight: 500; 
+}
+
+/* ================= DESTINATIONS & SECTIONS ================= */
+.destinations-section {
+    padding: 60px 0;
+}
+
+.destination-card {
+    background: #f8f9fa;
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    transition: 0.3s;
+    border-top: 5px solid #ffc107;
+}
+
+.destination-card:hover { 
+    transform: translateY(-5px); 
+    box-shadow: 0 8px 16px rgba(0,0,0,0.2); 
+}
+
+/* ================= BUTTONS ================= */
+.btn-custom-green { 
+    background-color: #198754; 
+    border-color: #198754; 
+    color: white; 
+}
+
+.btn-custom-green:hover { 
+    background-color: #146c43; 
+    border-color: #146c43; 
+}
+
+/* ================= ABOUT SECTION ================= */
+.about-section {
+    padding: 60px 0;
+}
+
+.about-card {
+    background: #f8f9fa;
+    padding: 30px;
+    border-radius: 12px;
+    border-left: 5px solid #ffc107;
+    margin-bottom: 30px;
+}
